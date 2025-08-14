@@ -1,2 +1,2 @@
-ALTER TABLE `store_api`.`users`
-ADD COLUMN `role` VARCHAR(45) NOT NULL DEFAULT 'USER' AFTER `password`;
+alter table users
+    add role varchar(20) default 'USER' not null;
