@@ -60,6 +60,8 @@ public class SecurityConfig {
             .authorizeHttpRequests(c -> c
                     .requestMatchers("/carts/**").permitAll()
                     .requestMatchers("/swagger-ui/**").permitAll()
+                    .requestMatchers("/swagger-ui.html").permitAll()
+                    .requestMatchers("/v3/api-docs/**").permitAll()
                     //.anyRequest().permitAll()
                     .requestMatchers(HttpMethod.POST, "/users").permitAll()
                     .requestMatchers(HttpMethod.POST, "/auth/login").permitAll()
